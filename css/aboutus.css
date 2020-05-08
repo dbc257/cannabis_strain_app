@@ -1,0 +1,66 @@
+h1 {
+  font-size: 65px;
+  font-style: italic;
+}
+.column {
+  column-count: auto;
+}
+#title {
+  background-color: #477347e5;
+  text-align: center;
+  padding: 3px;
+  margin: 25px;
+  width: 300px;
+  border: solid #003500;
+  border-radius: 10px;
+  align-self: center;
+  color: whitesmoke;
+
+}
+#ceo {
+  color: rgba(128, 128, 128, 0.863);
+}
+body {
+  background-color: black;
+  text-align: center;
+  align-items: center;
+
+
+}
+img {
+  border-radius: 60%;
+  align-self: center;
+}
+
+#allCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+
+.card {
+  text-align: center;
+  width: 90%;
+  margin: 15px;
+  padding: 10px;
+  border: solid #477347e5;
+  background: #272727;
+  color: whitesmoke;
+  padding: 30px;
+
+}
+
+
+
+
+
+
+
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

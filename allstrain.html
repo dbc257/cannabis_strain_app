@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/allstrain.css" />
+  <title>Cannabis Strain App Website</title>
+</head>
+
+<body>
+  <nav id='navBar' class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html">Cannabis Strain App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+       
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">View </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="type.html"><button  class="dropdown-item">Strain Type</button></a> 
+            <a href="effect.html"><button  class="dropdown-item">Strain Effects</button></a>
+            <a href="flavor.html"><button  class="dropdown-item">Strain Flavors</button></a>
+            <a> <div class="dropdown-divider"></div></a>
+            <a href="allstrain.html"> <button class="dropdown-item" >All Strains</button></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <img src="images/b-buds.jpg" class="img-fluid" alt="Responsive image">
+  <!-- <h1>Cannabis Strain App</h1> -->
+  <!-- <p></p>
+  <h3>All Cannabis Strain Information</h3>
+  <label>Press the this button to display the entire list of all cannabis strains including the strain name, strain
+    type, strain identification number(ID), strain flavors, and strain effects:</label>
+  <button id="allButtonBody">All Strains</button>
+  <p></p>
+  <h3>Filter Cannabis Strains by Effects</h3>
+  <p>Cannabis can be used for recreationally and/or to help treat medical conditions. Cannabis has positive effects and
+    some negative side effects as well.</p>
+  <label>Use the selector to filter cannabis strains by either positive effects, medical
+    conditions, or negative side effects:</label>
+  <p></p>
+
+  <select id="effectSelectorPositive">
+    <option name="pos" value="Relaxed">Relaxed</option>
+    <option name="pos" value="Hungry">Hungry</option>
+    <option name="pos" value="Euphoric">Euphoric</option>
+    <option name="pos" value="Happy">Happy</option>
+    <option name="pos" value="Creative">Creative</option>
+    <option name="pos" value="Energetic">Energetic</option>
+    <option name="pos" value="Talkative">Talkative</option>
+    <option name="pos" value="Uplifted">Uplifted</option>
+    <option name="pos" value="Tingly">Tingly</option>
+    <option name="pos" value="Sleepy">Sleepy</option>
+    <option name="pos" value="Focused">Focused</option>
+    <option name="pos" value="Giggly">Giggly</option>
+    <option name="pos" value="Aroused">Aroused</option>
+  </select>
+
+    <button class="desiredEffect" id="searchPositiveEffectButton" onclick="PosEffects()">Search by Desired Effects</button>
+  
+  <p></p>
+
+  <select id="effectSelectorMedical">
+    <option name="med" value="Depression">Depression</option>
+    <option name="med" value="Insomnia">Insomnia</option>
+    <option name="med" value="Pain">Pain</option>
+    <option name="med" value="Stress">Stress</option>
+    <option name="med" value="Cramps">Cramps</option>
+    <option name="med" value="Lack of Appetite">Lack of Appetite</option>
+    <option name="med" value="Nausea">Nausea</option>
+    <option name="med" value="Headache">Headache</option>
+    <option name="med" value="Fatigue">Fatigue</option>
+    <option name="med" value="Headaches">Headaches</option>
+    <option name="med" value="Eye Pressure">Eye Pressure</option>
+    <option name="med" value="Inflammation">Inflammation</option>
+    <option name="med" value="Spasticity">Spasticity</option>
+    <option name="med" value="Seizures">Seizures</option>
+    <option name="med" value="Muscle Spasms">Muscle Spasms</option>
+  </select>
+  <button class="medicalEffect" id="searchMedicalEffectButton" onclick="MedEffects()">Search by Medical Issues</button>
+  <p></p>
+
+  <select id="effectSelectorNegative">
+    <option name="neg" value="Dizzy">Dizzy</option>
+    <option name="neg" value="Dry Mouth">Dry Mouth</option>
+    <option name="neg" value="Paranoid">Paranoid</option>
+    <option name="neg" value="Dry Eyes">Dry Eyes</option>
+    <option name="neg" value="Anxious">Anxious</option>
+  </select>
+  <button class="negativeEffect" id="searchNegativeEffectButton" onclick="NegEffects()">Search by Effects to Avoid</button>
+  <p></p>
+
+  <h3>Filter Cannabis Strains by Flavor</h3>
+  <p>Each cannabis strain has a unique flavor profile.</p>
+  <label>Use the selector to filter cannabis strains by flavor:</label>
+
+  <select id="flavorSelector">
+
+  </select>
+  <button id="searchFlavorButton" onclick="flavorOptions()">Search</button>
+  <p></p> -->
+
+  <!-- <h3>View Cannabis Strain Descriptions</h3>
+  <label for="idTextBox">Type in a cannabis strain ID number to view a description of the strain:</label>
+  <input id="idTextBox" type="text" placeholder="Enter Strain ID Number" required />
+  <button id="descButton">Display Strain Description</button>
+  <p></p> -->
+
+  
+<div id="strainInfo">
+  <h3>View Cannabis Strain by Name</h3>
+  <label for="nameTextBox">Type in a cannabis strain name to view a description of the strain:</label>
+  <p></p>
+  <input id="nameTextBox" type="text" placeholder="Enter Strain Name" required />
+  <button id="nameButton">Display Strain Information</button>
+</div>
+<div id="strainInfo">
+  <h3>View All Cannabis Strains</h3>
+  <p>There are hundreds of different weed strains available and everyone has their favorites. Most (if not all) these strains are actually hybrid strains composed of different percentages of the 2 main types of cannabis: indica and sativa. Each strain has a personality; some are giggly- radiating aromas of citrusy, zingy smells. Others, focused and energized with pungent palates. Over years of cultivation, numerous strains have been fine-tuned to embody certain characteristics that cater to many needs. This is valuable information to consider when choosing the strain thats best for you. Press the this button to display the entire list of cannabis strains including the strain name, strain type, strain flavors, and strain effects:</p>
+  <p></p>
+  <button id="allButtonBody">All Strains</button>
+</div>
+<div id="displayAllGif"></div>
+  <div id="displayDivAllStrain"></div>
+
+  <!-- <div class="font" id="displayDiv"></div> -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  
+  <!-- <script src="js/strain.js"></script> -->
+  <script src="js/allstrain.js"></script>
+  <!-- <script src="js/race.js"></script>
+  <script src="js/effect.js"></script>
+  <script src="js/flavor.js"></script> -->
+</body>
+
+</html>
