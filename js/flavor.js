@@ -1,15 +1,14 @@
-
 // let searchPositiveEffectButton = document.getElementById("searchPositiveEffectButton")
 // let searchMedicalEffectButton  = document.getElementById("searchMedicalEffectButton")
 // let searchNegativeEffectButton  = document.getElementById("searchNegativeEffectButton")
-let flavorSelector = document.getElementById("flavorSelector")
-let searchFlavorButton = document.getElementById("searchFlavorButton")
+let flavorSelector = document.getElementById("flavorSelector");
+let searchFlavorButton = document.getElementById("searchFlavorButton");
 // let nameButton = document.getElementById("nameButton")
-let displayDivFlavor = document.getElementById("displayDivFlavor")
-let displayFlavorGif = document.getElementById("displayFlavorGif")
+let displayDivFlavor = document.getElementById("displayDivFlavor");
+let displayFlavorGif = document.getElementById("displayFlavorGif");
 // let allButtonBodyFlavor = document.getElementById("allButtonBodyFlavor")
 //--------------------------------------------------------------------
-// CODE FOR ALL STRAINS API 
+// CODE FOR ALL STRAINS API
 //--------------------------------------------------------------------
 // function renderPosts(strainPosts) {
 //     displayDivFlavor.innerHTML = ""
@@ -54,9 +53,8 @@ let displayFlavorGif = document.getElementById("displayFlavorGif")
 //--------------------------------------------------------------------
 // fetch("http://strainapi.evanbusse.com/0d4ocxj/strains/search/race/RACE")
 
-
 //--------------------------------------------------------------------
-// CODE FOR STRAIN SELECTOR BY EFFECT 
+// CODE FOR STRAIN SELECTOR BY EFFECT
 //--------------------------------------------------------------------
 // function effectOptions() {
 //     fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/effects")
@@ -71,7 +69,7 @@ let displayFlavorGif = document.getElementById("displayFlavorGif")
 // }
 
 // searchPositiveEffectButton.addEventListener("click", function () {
-// function PosEffects() { 
+// function PosEffects() {
 //     var e = document.getElementById("effectSelectorPositive").selectedIndex;
 //     console.log(e)
 //     var posSelection = document.getElementsByName("pos")[e].value;
@@ -95,7 +93,7 @@ let displayFlavorGif = document.getElementById("displayFlavorGif")
 // }
 
 // // searchMedicalEffectButton.addEventListener("click", function () {
-// function MedEffects() { 
+// function MedEffects() {
 //     var e = document.getElementById("effectSelectorMedical").selectedIndex;
 //     console.log(e)
 //     var medSelection = document.getElementsByName("med")[e].value;
@@ -119,7 +117,7 @@ let displayFlavorGif = document.getElementById("displayFlavorGif")
 // }
 
 // // searchNegativeEffectButton.addEventListener("click", function () {
-// function NegEffects() {    
+// function NegEffects() {
 //     var e = document.getElementById("effectSelectorNegative").selectedIndex;
 //     console.log(e)
 //     var negSelection = document.getElementsByName("neg")[e].value;
@@ -140,45 +138,43 @@ let displayFlavorGif = document.getElementById("displayFlavorGif")
 //             })
 //             displayDiv.innerHTML = effectItem.join("")})
 //         }
-    
 
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY FLAVOR
 //--------------------------------------------------------------------
 function flavorOptions() {
-    fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/flavors")
-        .then(response => response.json())
-        .then(flavorPosts => {
-            // flavorSelector.innerHTML = ""
-            let flavorItem = flavorPosts.map(function (flavor) {
-                return `<select>
-            <option name="flav" value="${flavor}">${flavor}</option>`
-            })
-            flavorSelector.innerHTML = flavorItem
-        })
+  fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/flavors")
+    .then((response) => response.json())
+    .then((flavorPosts) => {
+      // flavorSelector.innerHTML = ""
+      let flavorItem = flavorPosts.map(function (flavor) {
+        return `<select>
+            <option name="flav" value="${flavor}">${flavor}</option>`;
+      });
+      flavorSelector.innerHTML = flavorItem;
+    });
 }
 
-flavorOptions()
+flavorOptions();
 
 searchFlavorButton.addEventListener("click", function () {
-    displayFlavorGif.innerHTML = `
+  displayFlavorGif.innerHTML = `
     <body>
     <p></p>
     <img id="loadingGifFlavor" src="images/marijuana-yin-yang.gif" />
     <p></p>
     <h3 style="color: green">Cultivating Strain Information...</h3>
-    </body>`
-    var f = document.getElementById("flavorSelector").selectedIndex;
-    console.log(f)
-    var flavorSelection = document.getElementsByName("flav")[f].value;
-    console.log(flavorSelection)
-    let flavorURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/flavor/${flavorSelection}`
-    fetch(flavorURL)
-        .then(response => response.json())
-        .then(flavorPosts => {
-
-            let flavorItem = flavorPosts.map(function (flavor) {
-                return `
+    </body>`;
+  var f = document.getElementById("flavorSelector").selectedIndex;
+  console.log(f);
+  var flavorSelection = document.getElementsByName("flav")[f].value;
+  console.log(flavorSelection);
+  let flavorURL = `http://strainapi.evanbusse.com/0d4ocxj/strains/search/flavor/${flavorSelection}`;
+  fetch(flavorURL)
+    .then((response) => response.json())
+    .then((flavorPosts) => {
+      let flavorItem = flavorPosts.map(function (flavor) {
+        return `
                 <div class="cardTest" id="thirdFlavor">
                     <div class="cardBody" class="card text-center">
                         <h4><b>${flavor.name}</b></h4>
@@ -187,18 +183,19 @@ searchFlavorButton.addEventListener("click", function () {
                         <p class="card-text">${flavor.race}</p>
                         <p class="card-text">${flavor.flavor}</p>
                         </div>
-                    </div>`
-            })
-            displayFlavorGif.innerHTML = ""
-            displayDivFlavor.innerHTML = flavorItem.join("")
-        }).catch((err) => {
-            displayFlavorGif.innerHTML = `<h1 style="color: red">Oops, there was a problem getting the data!</h1>"`
-        
-        })
-})
+                    </div>`;
+      });
+      displayFlavorGif.innerHTML = "";
+      displayDivFlavor.innerHTML = flavorItem.join("");
+    })
+    .catch((err) => {
+      displayFlavorGif.innerHTML = `<h1 style="color: red">Oops, there was a problem getting the data!</h1>"`;
+      displayDivFlavor.innerHTML = "";
+    });
+});
 
 //--------------------------------------------------------------------
-// CODE TO SEARCH DESCRIPTION BY STRAIN ID NUMBER 
+// CODE TO SEARCH DESCRIPTION BY STRAIN ID NUMBER
 //--------------------------------------------------------------------
 
 // descButton.addEventListener("click", function () {
@@ -236,15 +233,15 @@ searchFlavorButton.addEventListener("click", function () {
 //         })
 // })
 //--------------------------------------------------------------------
-// API ADDRESSES FOR REFERENCE 
-// BOLD letters at the end of API address must have an input value 
+// API ADDRESSES FOR REFERENCE
+// BOLD letters at the end of API address must have an input value
 // substituted for the BOLD word at the end.
 // For example:
 // http://strainapi.evanbusse.com/0d4ocxj/strains/data/desc/STRAIN_ID
 // "STRAIN_ID" would have to have a number such as "3"
 // http://strainapi.evanbusse.com/0d4ocxj/strains/data/desc/3
-// STRAIN_ID 3 is named Afternoon Delight. 
-// After the strain name, it would show a strain description on the website 
+// STRAIN_ID 3 is named Afternoon Delight.
+// After the strain name, it would show a strain description on the website
 //--------------------------------------------------------------------
 
 // http://strainapi.evanbusse.com/0d4ocxj/strains/search/effect/EFFECT
