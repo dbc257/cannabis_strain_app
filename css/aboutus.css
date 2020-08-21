@@ -2,9 +2,11 @@ h1 {
   font-size: 65px;
   font-style: italic;
 }
+
 .column {
   column-count: auto;
 }
+
 #title {
   background-color: #477347e5;
   text-align: center;
@@ -15,18 +17,18 @@ h1 {
   border-radius: 10px;
   align-self: center;
   color: whitesmoke;
-
 }
+
 #ceo {
   color: rgba(128, 128, 128, 0.863);
 }
+
 body {
   background-color: black;
   text-align: center;
   align-items: center;
-
-
 }
+
 img {
   border-radius: 60%;
   align-self: center;
@@ -48,19 +50,11 @@ img {
   background: #272727;
   color: whitesmoke;
   padding: 30px;
-
 }
 
-
-
-
-
-
-
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
   }
+}

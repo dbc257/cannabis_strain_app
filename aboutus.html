@@ -1,166 +1,132 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/allstrain.css" />
-    <title>Cannabis Strain App Website</title>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link href="css/aboutus.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/allstrain.css" />
+        <title>Cannabis Strain App Website</title>
 
 
-
-
-
-<body>
-    <nav id='navBar' class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">Cannabis Strain App</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">View </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="type.html"><button class="dropdown-item">Strain Type</button></a>
-                        <a href="effect.html"><button class="dropdown-item">Strain Effects</button></a>
-                        <a href="flavor.html"></ahref> <button class="dropdown-item">Strain Flavors</button></a>
-                        <a>
-                            <div class="dropdown-divider"></div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link href="css/aboutus.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav id='navBar' class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Cannabis Strain App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">View </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="type.html"><button class="dropdown-item">Strain Type</button></a>
+                            <a href="effect.html"><button class="dropdown-item">Strain Effects</button></a>
+                            <a href="flavor.html"></ahref> <button class="dropdown-item">Strain Flavors</button></a>
+                            <a>
+                                <div class="dropdown-divider"></div>
+                            </a>
+                            <a href="allstrain.html"> 
+                                <button class="dropdown-item">All Strains</button>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="allCards">
+            <div id="title">
+                <h1 class="animated bounceIn">About Us</h1>
+            </div>
+            <div class="card">
+                <img src="images/david.jpeg" alt="David" style="width:50%">
+                <div class="container">
+                    <h2>David Carlisle</h2>
+                    <h5 id='ceo'>Software Engineer</h5>
+                    <p>I am a Full Stack Software Developer. I have a passion for software development and cannabis. I love creating new applications and
+                        websites that are aesthetically pleasing, intuitive, and interactive. I enjoy solving problems
+                        and automating tasks to make life run more efficiently. Software development combines my enjoyment
+                        of learning, creativity, and problem solving. 
+                    <p> 
+                        <a href="https://www.linkedin.com/in/dbc257/">
+                            <button type="button" class="btn btn-primary">LinkedIn Profile</button>
                         </a>
-                        <a href="allstrain.html"> <button class="dropdown-item">All Strains</button></a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-
-
-    <div id="allCards">
-        <!-- <div class="column"> -->
-        <div id="title">
-            <h1 class="animated bounceIn">About Us</h1>
-        </div>
-        <div class="card">
-            <img src="images/david.jpeg" alt="David" style="width:50%">
-            <!-- <div class="container"> -->
-            <h2>David Carlisle</h2>
-            <h5 id='ceo'>CEO & Founder</h5>
-
-            <p>I am a Full Stack Software Developer Student at DigitalCrafts Boot Camp that is graduating from
-                the
-                program in July of 2020. I have 5 years of work experience as a psychotherapist in the medical
-                field, 2+ years of working in the insurance industry, and 1+ years of working in retail sales.
-                I have a passion for software development and helping others. I love creating new applications and
-                websites that are aesthetically pleasing, intuitive, and interactive. I enjoy solving problems
-                and
-                automating tasks to make life run more efficiently. Software development combines my enjoyment
-                of
-                learning, creativity, and helping others. I'm looking for work as a junior level software
-                engineer. My ideal work environment would be collaborative, challenging, and allow room for
-                growth.
-                Ideally, the job would be a full-time position with medical benefits. Also, I enjoy working
-                remotely, but that isn't a requirement.
-
-                <p> <a href="https://www.linkedin.com/in/dbc257/"><button class="button">LinkedIn
-                            Profile</button></a></p>
-
-
-                </a>
-
-                <!-- </div> -->
-        </div>
-        <!-- </div> -->
-
-        <!-- <div class="column"> -->
-        <div class="card">
-            <img src="images/kendra.jpg" alt="Kendra" style="width:50%">
-            <div class="container">
-                <h2>LaKendra Farris</h2>
-                <p class="title">Software Engineer</p>
-                <p>I am an enthusiastic software engineer attending Digital Crafts Houston to be completed in July and
-                    is eager to join the technology industry. As I am an Army veteran, I enjoy being challenged and
-                    engaged with projects that require me to work outside my comfort and knowledge set while working
-                    alone or in a collaborative environment. My passion for creating practical proficient software is
-                    what drives me to keep striving to deliver stellar work ethic and drive. </p>
-                <p> <a href="https://www.linkedin.com/in/lakendra-f-054050188/"><button class="button">LinkedIn
-                            Profile</button></a></p>
-
-
-
-
-
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/kendra.jpg" alt="Kendra" style="width:50%">
+                    <div class="container">
+                    <h2>LaKendra Farris</h2>
+                    <h5 id='ceo'>Software Engineer</h5>
+                    <p>I am an enthusiastic software engineer attending Digital Crafts Houston to be completed in July and
+                        is eager to join the technology industry. As I am an Army veteran, I enjoy being challenged and
+                        engaged with projects that require me to work outside my comfort and knowledge set while working
+                        alone or in a collaborative environment. My passion for creating practical proficient software is
+                        what drives me to keep striving to deliver stellar work ethic and drive. </p>
+                    <p> 
+                        <a href="https://www.linkedin.com/in/lakendra-f-054050188/">
+                            <button type="button" class="btn btn-primary">LinkedIn Profile</button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/rickelle.jpeg" alt="Rickelle" style="width:50%">
+                <div class="container">
+                    <h2>Rickelle Tackitt</h2>
+                    <h5 id='ceo'>Software Engineer</h5>
+                    <p>Full Stack Developer that graduated in July of 2020 from DigitalCrafts in Houston, Texas. I am extremely dedicated to
+                        improving and gaining knowledge within the fast-paced, diverse world of tech which we all know and
+                        love. As I learn, I fuel a growing infatuation for building user-friendly websites that showcase the
+                        delicate balance between functionality and design. Upon graduation, I hope to grow alongside a
+                        company which allows me to cultivate my creativity and to bring innovative ideas to life.
+                    </p>
+                    <p> 
+                        <a href="https://www.linkedin.com/in/rickelle-tackitt-8781741a6/">
+                            <button type="button" class="btn btn-primary">LinkedIn Profile</button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/amy.png" alt="Amy" style="width:50%">
+                <div class="container">
+                    <h2>Amy Roy</h2>
+                    <h5 id='ceo'>Software Engineer</h5>
+                    <p>Former office professional who made the switch to web development to connect a passion for technology
+                        with practical data management skills. My strengths lie in project organization and training.
+                        In my free time, I enjoy 3D printing, gardening, hiking, and reading cyberpunk novels.
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/royamy/">
+                            <button type="button" class="btn btn-primary">LinkedIn Profile</button>
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
-        <!-- </div> -->
 
-        <!-- <div class="column"> -->
-        <div class="card">
-            <img src="images/rickelle.jpeg" alt="Rickelle" style="width:50%">
-            <div class="container">
-                <h2>Rickelle Tackitt</h2>
-                <p class="title">Software Engineer</p>
-                <p>Full Stack Developer, currently studying at Digital Crafts Houston. I am extremely dedicated to
-                    improving and gaining knowledge within the fast-paced, diverse world of tech which we all know and
-                    love. As I learn, I fuel a growing infatuation for building user-friendly websites that showcase the
-                    delicate balance between functionality and design. Upon graduation I hope to grow alongside a
-                    company which allows me to cultivate my creativity, bringing innovative ideas to life.</p>
-
-                <p> <a href="https://www.linkedin.com/in/rickelle-tackitt-8781741a6/"><button class="button">LinkedIn
-                            Profile</button></a></p>
-            </div>
-        </div>
-        <!-- </div> -->
-
-        <!-- <div class="column"> -->
-        <div class="card">
-            <img src="images/amy.png" alt="Amy" style="width:50%">
-            <div class="container">
-                <h2>Amy Roy</h2>
-                <p class="title">Software Engineer</p>
-                <p>Former office professional who made the switch to web development to connect a passion for technology
-                    with practical data management skills. My strengths lie in project organization and training.
-                    In my free time, I enjoy 3D printing, gardening, hiking, and reading cyberpunk novels.</p>
-                <p><a href="https://www.linkedin.com/in/royamy/"><button class="button">LinkedIn Profile</button></a>
-                </p>
-            </div>
-        </div>
-        <!-- </div> -->
-    </div>
-
-
-    <!-- Optional JavaScript 
-   jQuery first, then Popper.js, then Bootstrap JS  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="js/aboutus.js"></script>
-</body>
-
+        <!-- jQuery first, then Popper.js, then Bootstrap JS  -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </body>
 </html>
