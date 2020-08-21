@@ -1,34 +1,23 @@
 /* Large Mobile Devices + Tablets */
 @media only screen and (min-width: 481px) {
-    
-
-.img-heading {
+  .img-heading {
     width: 100%;
     height: 50%;
-}
+  }
 
-#divContainerAll {
+  #divContainerAll {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2px;
     background-color: black;
+  }
 
-}
-/* #divContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2px;
-    background-color: black;
+  #weedLeaf {
+    width: 95%;
+  }
 
-} */
-
- #weedLeaf {
-     width: 95%;
-
- } 
-.containerCell {
+  .containerCell {
     width: 33%;
     float: left;
     padding: 10px;
@@ -38,35 +27,33 @@
     background: #477347e5;
     color: whitesmoke;
     text-align: center;
-}
+  }
 
-#effectContainer {
+  #effectContainer {
     border: 3px solid #003500;
     border-radius: 5px;
     margin: 10px;
     padding: 15px;
     color: white;
     background-color: #272727;
+  }
 
-}
-
-#effectInfo {
+  #effectInfo {
     flex-wrap: wrap;
     padding: 15px;
     text-align: center;
-}
+  }
 
-#effectSearchContainer {
+  #effectSearchContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 2px;
     border-radius: 5px;
     background-color: white;
+  }
 
-}
-
-.effectContainerCell {
+  .effectContainerCell {
     width: 33%;
     float: left;
     padding: 10px;
@@ -75,10 +62,9 @@
     border: 3px solid green;
     background: #272727;
     color: white;
+  }
 
-}
-
-#strainInfo {
+  #strainInfo {
     border: 3px solid #003500;
     border-radius: 5px;
     margin: 10px;
@@ -86,217 +72,194 @@
     color: white;
     background-color: #272727;
     text-align: center;
+  }
 
-}
-
-body {
+  body {
     background-color: black;
     color: black;
-}
+  }
 
-#navBar {
+  #navBar {
     background: #477347e5;
-}
+  }
 
-.carousel-inner {
+  .carousel-inner {
     height: auto;
     width: auto;
-    
-}
+  }
 
-.img-thumbnail {
+  .img-thumbnail {
     background-color: black;
     border: none;
-}
+  }
 
-.d-block {
+  .d-block {
     height: 400px;
     max-width: 100%;
     object-fit: cover;
-}
+  }
 
-.cardTest{
-    background: rgba(235, 255, 235, .7);
+  .cardTest {
+    background: rgba(235, 255, 235, 0.7);
     margin: 10px;
     border-radius: 5px;
+  }
 
-}
-
-.cardBody {
+  .cardBody {
     margin: 10px;
     color: black;
     text-align: center;
     overflow-wrap: break-word;
+  }
 
-
-
-}
-
-#displayDiv {
+  #displayDiv {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 
-.divLink {
+  .divLink {
     color: whitesmoke;
-}
+  }
 
-a {
+  a {
     color: whitesmoke;
-}
+  }
 
-a:hover {
+  a:hover {
     color: whitesmoke;
-}
+  }
 }
 /* Mobile Devices */
 @media only screen and (min-width: 57px) and (max-width: 480px) {
-   
-    #divContainer {
-        display: flexbox;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 2px;
-        background-color: black;
-    
-    }
-    .img-heading {
-        width: 100%;
-        height: 50%;
-    }
-    
-     #weedLeaf {
-         width: 95%;
-    
-     } 
-    .containerCell {
-        
-        float: left;
-        padding: 10px;
-        margin: 5px;
-        border-radius: 5px;
-        border: 3px solid #003500;
-        background: #477347e5;
-        color: whitesmoke;
-        text-align: center;
-        
-    }
-    
-    #effectContainer {
-        border: 3px solid #003500;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 15px;
-        color: white;
-        background-color: #272727;
-    
-    }
-    
-    #effectInfo {
-        flex-wrap: wrap;
-        padding: 15px;
-        text-align: center;
-    }
-    
-    #effectSearchContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 2px;
-        border-radius: 5px;
-        background-color: white;
-    
-    }
-    
-    .effectContainerCell {
-        width: 33%;
-        float: left;
-        padding: 10px;
-        margin: 3px;
-        border-radius: 5px;
-        border: 3px solid green;
-        background: #272727;
-        color: white;
-    
-    }
-    
-    #strainInfo {
-        border: 3px solid #003500;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 15px;
-        color: white;
-        background-color: #272727;
-        text-align: center;
-    
-    }
-    
-    body {
-        background-color: black;
-        color: black;
-    }
-    
-    #navBar {
-        background: #477347e5;
-    }
-    
-    .carousel-inner {
-        height: auto;
-        width: auto;
-        
-    }
-    
-    .img-thumbnail {
-        background-color: black;
-        border: none;
-    }
-    
-    .d-block {
-        height: 400px;
-        max-width: 100%;
-        object-fit: cover;
-    }
-    
-    .cardTest{
-        background: rgba(235, 255, 235, .7);
-        margin: 10px;
-        border-radius: 5px;
-    
-    }
-    
-    .cardBody {
-        margin: 10px;
-        color: black;
-        text-align: center;
-        overflow-wrap: break-word;
-    
-    
-    
-    }
-    
-    #displayDiv {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .divLink {
-        color: whitesmoke;
-    }
-    
-    a {
-        color: whitesmoke;
-    }
-    
-    a:hover {
-        color: whitesmoke;
-    }
-    
+  #divContainer {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2px;
+    background-color: black;
+  }
 
-    
+  .img-heading {
+    width: 100%;
+    height: 50%;
+  }
 
-    
+  #weedLeaf {
+    width: 95%;
+  }
+
+  .containerCell {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid #003500;
+    background: #477347e5;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  #effectContainer {
+    border: 3px solid #003500;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    background-color: #272727;
+  }
+
+  #effectInfo {
+    flex-wrap: wrap;
+    padding: 15px;
+    text-align: center;
+  }
+
+  #effectSearchContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .effectContainerCell {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    border: 3px solid green;
+    background: #272727;
+    color: white;
+  }
+
+  #strainInfo {
+    border: 3px solid #003500;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    color: white;
+    background-color: #272727;
+    text-align: center;
+  }
+
+  body {
+    background-color: black;
+    color: black;
+  }
+
+  #navBar {
+    background: #477347e5;
+  }
+
+  .carousel-inner {
+    height: auto;
+    width: auto;
+  }
+
+  .img-thumbnail {
+    background-color: black;
+    border: none;
+  }
+
+  .d-block {
+    height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .cardTest {
+    background: rgba(235, 255, 235, 0.7);
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .cardBody {
+    margin: 10px;
+    color: black;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  #displayDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .divLink {
+    color: whitesmoke;
+  }
+
+  a {
+    color: whitesmoke;
+  }
+
+  a:hover {
+    color: whitesmoke;
+  }
 }
