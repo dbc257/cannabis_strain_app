@@ -8,7 +8,8 @@ h1 {
 }
 
 #title {
-  background-color: #477347e5;
+  /* background-color: #477347e5; */
+  background: green;
   text-align: center;
   padding: 3px;
   margin: 25px;
@@ -46,7 +47,8 @@ img {
   width: 90%;
   margin: 15px;
   padding: 10px;
-  border: solid #477347e5;
+  /* border: solid #477347e5; */
+  border: solid green;
   background: #272727;
   color: whitesmoke;
   padding: 30px;

@@ -10,7 +10,6 @@ function renderPosts(strainPosts) {
   let strainItems = "";
   for (let index = 0; index < Object.values(strainPosts).length; index++) {
     const strainItem = Object.values(strainPosts)[index];
-    // console.log(strainItem.effects.medical.join(", "))
     strainItems += `
         <div class="cardTest" id="thirdAll">
             <div class="cardBody" class="card text-center">

@@ -5,19 +5,18 @@ let displayFlavorGif = document.getElementById("displayFlavorGif");
 //--------------------------------------------------------------------
 // CODE FOR STRAIN SELECTOR BY FLAVOR
 //--------------------------------------------------------------------
-function flavorOptions() {
-  fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/flavors")
-    .then((response) => response.json())
-    .then((flavorPosts) => {
-      // flavorSelector.innerHTML = ""
-      let flavorItem = flavorPosts.map(function (flavor) {
-        return `<select>
-            <option name="flav" value="${flavor}">${flavor}</option>`;
-      });
-      flavorSelector.innerHTML = flavorItem;
-    });
-}
-flavorOptions();
+// function flavorOptions() {
+//   fetch("http://strainapi.evanbusse.com/0d4ocxj/searchdata/flavors")
+//     .then((response) => response.json())
+//     .then((flavorPosts) => {
+//       let flavorItem = flavorPosts.map(function (flavor) {
+//         return `<select class="selectpicker">
+//             <option name="flav" value="${flavor}">${flavor}</option>`;
+//       });
+//       flavorSelector.innerHTML = flavorItem;
+//     });
+// }
+// flavorOptions();
 
 searchFlavorButton.addEventListener("click", function () {
   displayFlavorGif.innerHTML = `

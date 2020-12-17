@@ -62,13 +62,13 @@
               <a href="flavor.html">
                 <button class="dropdown-item">Strain Flavors</button></a
               >
-              <a> <div class="dropdown-divider"></div></a>
+              <!-- <a> <div class="dropdown-divider"></div></a> -->
               <a href="allstrain.html">
                 <button class="dropdown-item">All Strains</button></a
               >
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
         </ul>
@@ -86,11 +86,60 @@
       </p>
       <label>Use the selector to filter cannabis strains by flavor:</label>
       <p></p>
-      <select id="flavorSelector"> </select>
+      <select id="flavorSelector" class="selectpicker" data-live-search="true">
+        <option name="flav" value="Earthy">Earthy</option>
+        <option name="flav" value="Chemical">Chemical</option>
+        <option name="flav" value="Pine">Pine</option>
+        <option name="flav" value="Spicey/Herbal">Spicey/Herbal</option>
+        <option name="flav" value="Pungent">Pungent</option>
+        <option name="flav" value="Pepper">Pepper</option>
+        <option name="flav" value="Flowery">Flowery</option>
+        <option name="flav" value="Citrus">Citrus</option>
+        <option name="flav" value="Orange">Orange</option>
+        <option name="flav" value="Sweet">Earthy</option>
+        <option name="flav" value="Skunk">Skunk</option>
+        <option name="flav" value="Grape">Grape</option>
+        <option name="flav" value="Minty">Minty</option>
+        <option name="flav" value="Woody">Woody</option>
+        <option name="flav" value="Cheese">Cheese</option>
+        <option name="flav" value="Diesel">Diesel</option>
+        <option name="flav" value="Tropical">Tropical</option>
+        <option name="flav" value="Grapefruit">Grapefruit</option>
+        <option name="flav" value="Nutty">Nutty</option>
+        <option name="flav" value="Lemon">Lemon</option>
+        <option name="flav" value="Berry">Berry</option>
+        <option name="flav" value="Blueberry">Blueberry</option>
+        <option name="flav" value="Ammonia">Ammonia</option>
+        <option name="flav" value="Apple">Apple</option>
+        <option name="flav" value="Rose">Rose</option>
+        <option name="flav" value="Butter">Butter</option>
+        <option name="flav" value="Honey">Honey</option>
+        <option name="flav" value="Tea">Tea</option>
+        <option name="flav" value="Lime">Lime</option>
+        <option name="flav" value="Lavender">Lavender</option>
+        <option name="flav" value="Strawberry">Strawberry</option>
+        <option name="flav" value="Mint">Mint</option>
+        <option name="flav" value="Chestnut">Chestnut</option>
+        <option name="flav" value="Tree Fruit">Tree Fruit</option>
+        <option name="flav" value="Pear">Pear</option>
+        <option name="flav" value="Apricot">Apricot</option>
+        <option name="flav" value="Peach">Peach</option>
+        <option name="flav" value="Blue Cheese">Blue Cheese</option>
+        <option name="flav" value="Menthol">Menthol</option>
+        <option name="flav" value="Coffee">Coffee</option>
+        <option name="flav" value="Tar">Tar</option>
+        <option name="flav" value="Mango">Mango</option>
+        <option name="flav" value="Pineapple">Pineapple</option>
+        <option name="flav" value="Sage">Sage</option>
+        <option name="flav" value="Vanilla">Vanilla</option>
+        <option name="flav" value="Plum">Plum</option>
+        <option name="flav" value="Tobacco">Tobacco</option>
+        <option name="flav" value="Violet">Violet</option>
+      </select>
       <button
         id="searchFlavorButton"
         type="button"
-        class="btn btn-success"
+        class="btn btn-success text-dark"
         onclick="flavorOptions()"
       >
         Search

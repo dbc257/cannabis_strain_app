@@ -63,13 +63,13 @@
               <a href="flavor.html"
                 ><button class="dropdown-item">Strain Flavors</button></a
               >
-              <a> <div class="dropdown-divider"></div></a>
+              <!-- <a> <div class="dropdown-divider"></div></a> -->
               <a href="allstrain.html">
                 <button class="dropdown-item">All Strains</button></a
               >
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="aboutus.html">About Us</a>
           </li>
         </ul>
@@ -83,15 +83,20 @@
         strain:</label
       >
       <p></p>
-      <input
-        id="nameTextBox"
-        type="text"
-        placeholder="Enter Strain Name"
-        required
-      />
-      <button type="button" class="btn btn-success" id="nameButton">
-        Display Strain Information
-      </button>
+      <div class="input-group mb-3">
+        <input
+          id="nameTextBox"
+          type="text"
+          class="form-control"
+          placeholder="Enter Strain Name"
+          required
+        />
+        <div class="input-group-append">
+          <button type="button" class="btn btn-success" id="nameButton">
+            Display Strain Information
+          </button>
+        </div>
+      </div>
     </div>
     <div id="strainInfo">
       <h3>View All Cannabis Strains</h3>
